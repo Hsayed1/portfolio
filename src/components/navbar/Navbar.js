@@ -48,7 +48,6 @@ const Navbar = () => {
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-24 h-auto" src={logo} alt="logo" />{" "}
-                {/* Adjust size here */}
                 <p className="text-sm text-gray-400 mt-4">
                   Hamed Sayed is a passionate software engineer with expertise
                   in full stack development, data science, and mobile development.
