@@ -1,4 +1,4 @@
-import React from 'react'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          import React from 'react'
 import { motion } from 'framer-motion';
 
 const Skills = () => {
@@ -27,8 +27,8 @@ const Skills = () => {
               >
                 <span className="absolute -top-7 right-0">100%</span>
               </motion.span>
-            </span>
-          </div>
+            </span>             
+          </div>                                                    
           <div className="overflow-x-hidden">
             <p className="text-sm uppercase font-medium">Figma</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">

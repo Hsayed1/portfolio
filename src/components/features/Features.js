@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaGraduationCap, FaCode, FaBrain, FaStar, FaClipboardLi
 import Title from '../layouts/Title';
 import Card from './Card';
 
-const AboutMe = () => {
+const Features = () => {
   return (
     <section
       id="about-me"
@@ -18,7 +18,7 @@ const AboutMe = () => {
         />
         <Card
           title="Education"
-          des="Graduated magna cum laude with a B.S. in Computer Science from San Jose State University. My degree covered a broad range of computer science principles"
+          des="Graduated magna cum laude with a B.S. in Computer Science from San Jose State University. My degree covered a broad range of computer science principles."
           icon={<FaGraduationCap />}
         />
         <Card
@@ -47,4 +47,4 @@ const AboutMe = () => {
   );
 }
 
-export default AboutMe;
+export default Features;
