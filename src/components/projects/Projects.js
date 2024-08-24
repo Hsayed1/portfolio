@@ -1,6 +1,5 @@
 import React from "react";
 import Title from "../layouts/Title";
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
 import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
@@ -16,15 +15,23 @@ const Projects = () => {
         <ProjectsCard
           title="Point-Of-Sale Web App"
           des="Developed a client-server POS system for cash-only businesses, transforming order management and user experiences. Introduced a real-time Kitchen Display System, streamlining order tracking and improving customer interactions. Achieved operational efficiency with a personalized menu interface and seamless order processing."
-          src={projectOne}
+          src={"/pos.png"}
           gitLink={
             "https://github.com/Hsayed1/Point-of-Sale-Application/tree/staging"
           }
         />
+
+        <ProjectsCard
+          title="CampusConnect"
+          des="Developed a social media platform tailored for college students to connect and interact. Users can follow others, engage with posts through likes and comments, and build their social network. This project included features like post management, profile interactions, and user authentication, creating a vibrant online community for campus life."
+          src={"/cc.png"}
+          gitLink={"https://github.com/Hsayed1/Campus-Connect"}
+        />
+
         <ProjectsCard
           title="MelodyStream: Integrated Music Player"
           des="Collaborated with peers to develop an Android MusicPlayer app that lets users seamlessly search and play music from local files and Spotify. The app enables smooth transitions between Spotify and local tracks, featuring integrated playback and cross-search functionality. Gained expertise in Android development and MediaStore API."
-          src={projectTwo}
+          src={"/android.png"}
           gitLink={"https://github.com/Hsayed1/AndroidMusicPlayer"}
         />
 
@@ -45,17 +52,10 @@ const Projects = () => {
         />
 
         <ProjectsCard
-          title="CampusConnect"
-          des="Developed a social media platform tailored for college students to connect and interact. Users can follow others, engage with posts through likes and comments, and build their social network. This project included features like post management, profile interactions, and user authentication, creating a vibrant online community for campus life."
-          src={projectOne}
-          gitLink={"https://github.com/Hsayed1/Campus-Connect"}
-        />
-
-        <ProjectsCard
           title="Index Card Manager"
           des="Created an interactive index card management application for organizing and studying information. Users can create, edit, and review digital index cards, facilitating efficient learning and knowledge retention. Features include customizable card sets and a user-friendly interface designed to enhance study sessions and information recall."
-          src={projectTwo}
-          gitLink={"https://github.com/Hsayed1/IndexCardManager"} // Replace with actual link if available
+          src={"/indexcard.png"}
+          gitLink={"https://github.com/Hsayed1/IndexCardManager"}
         />
       </div>
     </section>

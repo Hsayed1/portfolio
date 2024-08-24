@@ -1,7 +1,7 @@
-import React,{useState} from 'react'
-import Title from '../layouts/Title';
-import ContactLeft from './ContactLeft';
-
+import React, { useState } from "react";
+import Title from "../layouts/Title";
+import ContactLeft from "./ContactLeft";
+import emailjs from "emailjs-com";
 const Contact = () => {
   const [username, setUsername] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -18,33 +18,34 @@ const Contact = () => {
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
   // ========== Email Validation end here ================
+const handleSend = (e) => {
+  e.preventDefault();
+  if (username === "") {
+    setErrMsg("Username is required!");
+  } else if (phoneNumber === "") {
+    setErrMsg("Phone number is required!");
+  } else if (email === "") {
+    setErrMsg("Please give your Email!");
+  } else if (!emailValidation(email)) {
+    setErrMsg("Give a valid Email!");
+  } else if (subject === "") {
+    setErrMsg("Plese give your Subject!");
+  } else if (message === "") {
+    setErrMsg("Message is required!");
+  } else {
+    setSuccessMsg(
+      `Thank you ${username}, your message has been sent successfully! Please expect a response in 1-2 business days.`
+    );
+    setErrMsg("");
+    setUsername("");
+    setPhoneNumber("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  }
+};
 
-  const handleSend = (e) => {
-    e.preventDefault();
-    if (username === "") {
-      setErrMsg("Name is required!");
-    } else if (phoneNumber === "") {
-      setErrMsg("Phone number is required!");
-    } else if (email === "") {
-      setErrMsg("Please give your Email!");
-    } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
-    } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
-    } else if (message === "") {
-      setErrMsg("Message is required!");
-    } else {
-      setSuccessMsg(
-        `Thank you ${username}, your message has been sent successfully! Please expect a response in 1-2 business days.`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
-    }
-  };
+
   return (
     <section
       id="contact"
@@ -76,6 +77,7 @@ const Contact = () => {
                   <input
                     onChange={(e) => setUsername(e.target.value)}
                     value={username}
+                    name="name"
                     className={`${
                       errMsg === "Username is required!" &&
                       "outline-designColor"
@@ -90,6 +92,7 @@ const Contact = () => {
                   <input
                     onChange={(e) => setPhoneNumber(e.target.value)}
                     value={phoneNumber}
+                    name="number"
                     className={`${
                       errMsg === "Phone number is required!" &&
                       "outline-designColor"
@@ -105,6 +108,7 @@ const Contact = () => {
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
+                  name="email"
                   className={`${
                     errMsg === "Please give your Email!" &&
                     "outline-designColor"
@@ -119,6 +123,7 @@ const Contact = () => {
                 <input
                   onChange={(e) => setSubject(e.target.value)}
                   value={subject}
+                  name= "subject"
                   className={`${
                     errMsg === "Plese give your Subject!" &&
                     "outline-designColor"
@@ -133,6 +138,7 @@ const Contact = () => {
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
                   value={message}
+                  name = "message"
                   className={`${
                     errMsg === "Message is required!" && "outline-designColor"
                   } contactTextArea`}
@@ -164,6 +170,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;

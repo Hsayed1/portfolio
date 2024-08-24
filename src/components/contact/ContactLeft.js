@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaGithub, FaLinkedinIn, FaRegHandshake} from "react-icons/fa";
-import { contactImg } from "../../assets/index";
+import { FaGithub, FaLinkedinIn} from "react-icons/fa";
+
 
 const ContactLeft = () => {
   const handleClick = (url) => {

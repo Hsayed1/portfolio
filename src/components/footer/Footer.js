@@ -11,11 +11,11 @@ const Footer = () => {
         </h3>
       </div>
       <div className="container mx-auto flex flex-wrap justify-center gap-8 text-center">
-        <a href="#banner" className="relative text-lg hover:text-designColor transition-colors duration-300">
+        <a href="#home" className="relative text-lg hover:text-designColor transition-colors duration-300">
           Home
           <span className="absolute bottom-0 left-0 w-full h-1 bg-designColor transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
         </a>
-        <a href="#features" className="relative text-lg hover:text-designColor transition-colors duration-300">
+        <a href="#about-me" className="relative text-lg hover:text-designColor transition-colors duration-300">
           About me
           <span className="absolute bottom-0 left-0 w-full h-1 bg-designColor transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
         </a>

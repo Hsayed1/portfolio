@@ -1,12 +1,11 @@
 import React from 'react';
-import { bannerImg } from "../../assets/index";
 
 const RightBanner = () => {
   return (
     <div className="w-full lgl:w-1/2 flex justify-center items-center relative">
       <img
         className="w-[320px] h-[420px] lgl:w-[900px] lgl:h-[620px] z-10 object-cover"
-        src={bannerImg}
+        src={"/bannerImg.png"}
         alt="bannerImg"
       />
       {/* Green shadow applied outside the shape */}
