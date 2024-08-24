@@ -23,7 +23,8 @@ const LeftBanner = () => {
           Hi, my name is <span className="capitalize" style={{ color: '#32a852' }}>Hamed Sayed</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
-          I am a <span>{text}</span>
+          I am a <br className="block md:hidden" /> {/* Forces a new line in mobile view */}
+          <span>{text}</span>
           <Cursor
             cursorBlinking="false"
             cursorStyle="|"
@@ -33,7 +34,6 @@ const LeftBanner = () => {
         <p className="text-base font-bodyFont leading-6 tracking-wide">
           Changing the world one bit at a time 🚀😊
         </p>
-
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div>
