@@ -22,8 +22,8 @@ const LeftBanner = () => {
         <h1 className="text-6xl font-bold text-white">
           Hi, my name is <span className="capitalize" style={{ color: '#32a852' }}>Hamed Sayed</span>
         </h1>
-        <h2 className="text-4xl font-bold text-white">
-          I am a <br className="block md:hidden" /> {/* Forces a new line in mobile view */}
+        <h2 className="text-4xl font-bold text-white sm:text-3xl md:text-4xl">
+          I am <br className="block md:hidden" /> {/* Forces a new line in mobile view */}
           <span>{text}</span>
           <Cursor
             cursorBlinking="false"
