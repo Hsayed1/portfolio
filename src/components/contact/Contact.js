@@ -10,6 +10,9 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
+  const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const publicKey = process.env.REACT_APP_EMAILJS_USER_ID;
 
   // ========== Email Validation start here ==============
   const emailValidation = () => {
@@ -36,6 +39,13 @@ const handleSend = (e) => {
     setSuccessMsg(
       `Thank you ${username}, your message has been sent successfully! Please expect a response in 1-2 business days.`
     );
+    emailjs.send(serviceId, templateId,{
+      name: username,
+      message: message,
+      subject: subject,
+      email: email,
+      number: phoneNumber,
+      } ,publicKey)
     setErrMsg("");
     setUsername("");
     setPhoneNumber("");
