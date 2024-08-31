@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Title from "../layouts/Title";
 import ContactLeft from "./ContactLeft";
 import emailjs from "emailjs-com";
-//updated env file vars
+//updated env file var
 const Contact = () => {
   const [username, setUsername] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
