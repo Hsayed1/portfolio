@@ -10,6 +10,30 @@ const TimeLine = () => {
 
   const events = [
     {
+      title: 'Handshake',
+      subtitle: 'Software Engineering Intern',
+      date: 'February 2025 – Current',
+      icon: <FaBriefcase style={{ color: '#32a852', fontSize: '1.5rem', marginRight: '0.5rem' }} />,
+      details: (
+        <ul style={{ color: 'white', marginLeft: '2rem', paddingLeft: '1rem', listStyleType: 'disc' }}>
+          <li style={{ marginBottom: '0.5rem' }}>Currently working on the advertisment team at Handshake.</li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Medline Industries, LP',
+      subtitle: 'Associate Software Engineer',
+      date: 'June 2024 – January 2025',
+      icon: <FaBriefcase style={{ color: '#32a852', fontSize: '1.5rem', marginRight: '0.5rem' }} />,
+      details: (
+        <ul style={{ color: 'white', marginLeft: '2rem', paddingLeft: '1rem', listStyleType: 'disc' }}>
+          <li style={{ marginBottom: '0.5rem' }}>Engineered robust deployment tracker application using Next.js, Cosmos DB, Azure Functions, Chart.js, and other Azure resources, enabling the Ecommerce team to efficiently manage deployment histories across development, test, and production environments.</li>
+          <li style={{ marginBottom: '0.5rem' }}>Scaled the application to an enterprise-level solution, empowering all technology teams at Medline to streamline deployment management.</li>
+          <li>Accomplishments: Developed a tool that enhanced collaboration among over 100 developers, optimizing cross-functional operations between Ops, QA, and Development teams. Attained 96% code coverage and passed 100% of Jest unit tests.</li>
+        </ul>
+      ),
+    },
+    {
       title: 'San Jose State University',
       subtitle: 'B.S. in Computer Science',
       date: 'August 2020 - May 2024',
@@ -20,19 +44,6 @@ const TimeLine = () => {
           <li style={{ marginBottom: '0.5rem' }}>Graduated Magna Cum Laude</li>
           <li style={{ marginBottom: '0.5rem' }}>Named President Scholar and Dean’s Scholar multiple times</li>
           <li>Relevant Coursework: Data Structures and Algorithms, Object-Oriented Design, Mobile Device Development, Database Management Systems, Software Engineering, Operating Systems, Computer Architecture, Computer Networks, Machine Learning, Cyber Security, Data Visualization, Applied Probability and Statistics</li>
-        </ul>
-      ),
-    },
-    {
-      title: 'Medline Industries, LP',
-      subtitle: 'Software Engineering Intern',
-      date: 'June 2024 – August 2024',
-      icon: <FaBriefcase style={{ color: '#32a852', fontSize: '1.5rem', marginRight: '0.5rem' }} />,
-      details: (
-        <ul style={{ color: 'white', marginLeft: '2rem', paddingLeft: '1rem', listStyleType: 'disc' }}>
-          <li style={{ marginBottom: '0.5rem' }}>Engineered robust deployment tracker application using Next.js, Cosmos DB, Azure Functions, Chart.js, and other Azure resources, enabling the Ecommerce team to efficiently manage deployment histories across development, test, and production environments.</li>
-          <li style={{ marginBottom: '0.5rem' }}>Scaled the application to an enterprise-level solution, empowering all technology teams at Medline to streamline deployment management.</li>
-          <li>Accomplishments: Developed a tool that enhanced collaboration among over 100 developers, optimizing cross-functional operations between Ops, QA, and Development teams. Attained 96% code coverage and passed 100% of Jest unit tests.</li>
         </ul>
       ),
     },

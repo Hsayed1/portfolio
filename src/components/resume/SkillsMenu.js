@@ -12,13 +12,13 @@ const SkillsMenu = () => {
     {
       title: 'Programming Languages',
       icon: <FaCode className="text-green-500 text-lg mr-2" />,
-      skills: ['Java', 'Python', 'JavaScript', 'TypeScript', 'Kotlin', 'HTML', 'CSS'],
+      skills: ['Java', 'Python', 'JavaScript', 'TypeScript', "Ruby", 'Kotlin', 'HTML', 'CSS'],
     },
     {
       title: 'Web Development',
       icon: <FaLaptopCode className="text-green-500 text-lg mr-2" />,
       skills: [
-        'Node.js', 'React.js', 'Next.js', 'Tailwind CSS', 'Bootstrap', 'Flask', 'REST API', 'Chart.js'
+        'Node.js', 'React.js', 'Next.js', 'Tailwind CSS', 'Bootstrap', 'Flask', 'Ruby on Rails', "GraphQL", 'REST', 'Chart.js'
       ],
     },
     {
@@ -30,7 +30,7 @@ const SkillsMenu = () => {
       title: 'Development Tools & Environments',
       icon: <FaTools className="text-green-500 text-lg mr-2" />,
       skills: [
-        'Microsoft Azure', 'Postman', 'Jenkins', 'Git', 'JUnit', 'Jest', 'Android Studio', 
+        'Microsoft Azure', "Docker", "Google Cloud Platform", "Datadog", "Buildkite", 'Postman', 'Jenkins', 'Git', 'Android Studio', 
         'Visual Studio Code', 'Terminal', 'Linux'
       ],
     },
