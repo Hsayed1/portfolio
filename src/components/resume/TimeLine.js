@@ -11,7 +11,7 @@ const TimeLine = () => {
   const events = [
     {
       title: 'Handshake',
-      subtitle: 'Software Engineering Intern',
+      subtitle: 'Software Engineering I',
       date: 'February 2025 – Current',
       icon: <FaBriefcase style={{ color: '#32a852', fontSize: '1.5rem', marginRight: '0.5rem' }} />,
       details: (
@@ -46,19 +46,7 @@ const TimeLine = () => {
           <li>Relevant Coursework: Data Structures and Algorithms, Object-Oriented Design, Mobile Device Development, Database Management Systems, Software Engineering, Operating Systems, Computer Architecture, Computer Networks, Machine Learning, Cyber Security, Data Visualization, Applied Probability and Statistics</li>
         </ul>
       ),
-    },
-    {
-      title: 'Self-employed',
-      subtitle: 'Computer Science Tutor',
-      date: 'September 2021 – June 2022',
-      icon: <FaBriefcase style={{ color: '#32a852', fontSize: '1.5rem', marginRight: '0.5rem' }} />,
-      details: (
-        <ul style={{ color: 'white', marginLeft: '2rem', paddingLeft: '1rem', listStyleType: 'disc' }}>
-          <li style={{ marginBottom: '0.5rem' }}>Provided one-on-one and group tutoring sessions to high school computer science students.</li>
-          <li>Accomplishments: Helped several students achieve an average 5.7% increase in their grades and fostered a deeper understanding of computer science principles.</li>
-        </ul>
-      ),
-    },
+    }
     {
       title: 'Spark my Sport (Skillteck Inc)',
       subtitle: 'Product Management Intern',
