@@ -46,7 +46,7 @@ const TimeLine = () => {
           <li>Relevant Coursework: Data Structures and Algorithms, Object-Oriented Design, Mobile Device Development, Database Management Systems, Software Engineering, Operating Systems, Computer Architecture, Computer Networks, Machine Learning, Cyber Security, Data Visualization, Applied Probability and Statistics</li>
         </ul>
       ),
-    }
+    },
     {
       title: 'Spark my Sport (Skillteck Inc)',
       subtitle: 'Product Management Intern',
