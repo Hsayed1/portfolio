@@ -11,7 +11,7 @@ const TimeLine = () => {
   const events = [
     {
       title: 'Handshake',
-      subtitle: 'Software Engineering I',
+      subtitle: 'Software Engineer I',
       date: 'February 2025 – Current',
       icon: <FaBriefcase style={{ color: '#32a852', fontSize: '1.5rem', marginRight: '0.5rem' }} />,
       details: (
